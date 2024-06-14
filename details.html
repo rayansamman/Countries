@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-header-image text-white text-center p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-4xl font-bold">Country Details</h1>
+            <nav>
+                <a href="index.html?reload" class="text-black bg-white px-4 py-2 rounded">HOME</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+        <div id="loading" class="text-center mt-4">
+            <p>Loading...</p>
+        </div>
+        <section id="country-details" class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 hidden">
+            <div>
+                <h2 id="country-name" class="text-4xl font-bold mb-4">Country name</h2>
+                <img id="country-flag" src="" alt="Country flag" class="w-full h-64 object-cover mb-4">
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-2">Names</h3>
+                <p><strong>Common:</strong> <span id="common-name"></span></p>
+                <p><strong>Official:</strong> <span id="official-name"></span></p>
+                <p><strong>Common (Native):</strong> <span id="common-native-name"></span></p>
+                <p><strong>Official (Native):</strong> <span id="official-native-name"></span></p>
+                <p><strong>Alternative spelling:</strong> <span id="alt-spelling"></span></p>
+                <p><strong>Translations:</strong> <span id="translations"></span></p>
+
+                <h3 class="text-2xl font-bold mt-4 mb-2">Codes</h3>
+                <p><strong>ISO alpha-2:</strong> <span id="iso-alpha-2"></span></p>
+                <p><strong>ISO alpha-3:</strong> <span id="iso-alpha-3"></span></p>
+                <p><strong>ISO numeric:</strong> <span id="iso-numeric"></span></p>
+                <p><strong>International calling:</strong> <span id="intl-calling"></span></p>
+                <p><strong>ISO currency code:</strong> <span id="currency-code"></span></p>
+                <p><strong>Top-level domain:</strong> <span id="tld"></span></p>
+
+                <h3 class="text-2xl font-bold mt-4 mb-2">Geography</h3>
+                <p><strong>Region:</strong> <span id="region"></span></p>
+                <p><strong>Subregion:</strong> <span id="subregion"></span></p>
+                <p><strong>Capital:</strong> <span id="capital"></span></p>
+                <p><strong>Demonym:</strong> <span id="demonym"></span></p>
+                <p><strong>Lat/Lng:</strong> <span id="latlng"></span></p>
+                <p><strong>Area:</strong> <span id="area"></span></p>
+                <p><strong>Land borders:</strong> <span id="borders"></span></p>
+
+                <h3 class="text-2xl font-bold mt-4 mb-2">Languages</h3>
+                <p><strong>Native language:</strong> <span id="native-language"></span></p>
+                <p><strong>Languages:</strong> <span id="languages"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
